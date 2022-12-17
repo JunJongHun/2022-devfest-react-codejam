@@ -7,13 +7,14 @@ import DetailPage from 'src/components/pages/DetailPage';
 export const { Stack, useFlow } = stackflow({
   transitionDuration: 350,
   activities: {
+    //액티비티에 등록해놓은 상태
     MainPage,
     DetailPage,
   },
   plugins: [
     basicRendererPlugin(),
     basicUIPlugin({
-      theme: 'cupertino',
+      theme: 'cupertino', //설정 아이폰?
       backgroundColor: '#212124',
     }),
   ],
